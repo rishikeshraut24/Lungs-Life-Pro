@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungs Gaurd</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'fillform/Css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+ 
+
+</head>
+
+<body>
+    <div class="section" id="home">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="http://127.0.0.1:5501/Lung-Guard-main/ourMethod.html">Services</a></li>
+
+
+
+                <li><a href="#contact-section">Contact</a></li>
+
+                <li><a href="help/support">Help</a></li>
+                <div class="cursor"></div>
+            </ul>
+        </div>
+            <div class="heading">
+
+                <div class="head2">
+                    <h1>Tobacoo-Free in 30 Days
+                        with NO CRAVINGS</h1>
+                        <p id="motivates" style="color: white;">A personalised app-based program
+                            
+                            LungsLife offers a step-by-step, scientifically-backed approach tailored to your unique needs, 
+                            <br> ensuring a smooth transition to a healthier, tobacco-free life. The app provides engaging and interactive content, daily <br> motivations,
+                             and powerful tools to help you stay focused and committed to your goal. With LungsLife, you'll gain <br>confidence 
+                             and support needed to overcome any hurdles,  while building lasting habits for a smoke-free future.
+
+
+
+
+                        </p>
+                </div>
+
+            </div>
+ 
+            <div class="calculateprice">
+                <img class="smokeboy" src="{% static 'fillform/images/sb.png' %}" alt="sk">
+                <h1 class="infocalhead">Calculate Your Smoking Costs: <br>The Price of a Deadly Habit</h1>
+                <div class="caldiv">
+                    <form class="form" id="smokingForm">
+                        <div class="eksathbox">
+                            <div class="second">
+                                <label for="num">How many years</label>
+                                <input class="sdk" type="number" id="num" placeholder="Enter years" required>
+                            </div>
+                            <div class="second">
+                                <label for="dayk">How many in a day</label>
+                                <input class="sdk" type="number" id="dayk" placeholder="Enter cigarettes per day" required>
+                            </div>
+                            <div class="second">
+                                <label for="price">Price of one</label>
+                                <input class="sdk" type="number" id="price" placeholder="Enter price per cigarette" required>
+                            </div>
+                            <div class="second">
+                                <button id="btnc" type="submit">Calculate</button>
+                            </div>
+                            <div id="result"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        
+    </div>
+       
+    <div id="about-section">
+
+        <h1 style="text-transform: uppercase;">About LungsLife <span id="icon"
+            style="display: inline-block; margin-bottom:10px;">:-</span></h1>
+<p>LungsLife is your personal quit-smoking and tobacco-free assistant,<br> ready to help you break free from addiction
+    and embrace a healthier life<br>quickly and effectively. From providing personalized plans to offering daily
+    motivation,<br>LungsLife is designed to support you every step of the way<br> and make your journey to a smoke-free
+    life easier and permanent.</p>
+<h2 style="text-transform: uppercase;">We Provide<span id="icon"
+        style="display: inline-block; margin-bottom:10px;">:-</span></h2>
+
+        <div id="scroller">
+            <div id="scrollerin-1">
+        
+                <h4>Personalized Quit Plans</h4>
+                <h4>Daily Motivations</h4>
+                <h4>Craving Management</h4>
+                <h4>Progress Tracking</h4>
+                <h4>Community Support</h4>
+        
+            </div>
+            <div id="scrollerin-2">
+                <h4>Personalized Quit Plans</h4>
+                <h4>Daily Motivations</h4>
+                <h4>Expert Advice</h4>
+                <h4>Progress Tracking</h4>
+                <h4>Community Support</h4>
+        
+            </div>
+        </div>
+        <div id="scroller">
+            <div id="scrollerin-1">
+                <h4 class="spaced-heading">Community Support</h4>
+                <h4 class="spaced-heading">Progress Tracking</h4>
+                <h4 class="spaced-heading">Craving Management Tools</h4>
+                <h4 class="spaced-heading">Daily Motivations</h4>
+                <h4 class="spaced-heading">Personalized Quit Plans</h4>
+            </div>
+        
+            <div id="scrollerin-2">
+                <h4 class="spaced-heading">Community Support</h4>
+                <h4 class="spaced-heading">Progress Tracking</h4>
+                <h4 class="spaced-heading">Craving Management</h4>
+                <h4 class="spaced-heading">Expert Advice</h4>
+                <h4 class="spaced-heading">Personalized Quit Plans</h4>
+            </div>
+        </div>
+        
+
+        <div id="cards-container">
+
+            <div class="card" id="card1">
+                <div class="overlay">
+                    <h4>Personalized <br> Quit Plan</h4>
+                    <p style="color: rgb(0, 0, 0);">Get a step-by-step plan tailored to your needs, making your journey to a tobacco-free life simple and effective.</p>
+                </div>
+            </div>
+        
+            <div class="card" id="card2">
+                <div class="overlay">
+                    <h4>Daily <br> Motivations</h4>
+                    <p style="color: black;">Stay inspired with daily tips and reminders that keep you focused and committed to a healthier lifestyle.</p>
+                </div>
+            </div>
+        
+            <div class="card" id="card3">
+                <div class="overlay">
+                    <h4>Support & <br> Guidance</h4>
+                    <p style="color: black;">Access expert advice and resources anytime to help you overcome challenges and stay on track.</p>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+
+    <!-- About us -->
+
+
+
+<div class="mainbox" id="contact-section">
+    <div class="center-container">
+        <h1 style="color: black;" >Contact Us</h1>
+    </div>
+    
+<div  class="contactus" style="background-image: url(contactUs3.jfif); background-repeat: no-repeat; background-position: 100% -250px; ">
+      
+
+    <div class="contactbox">
+     
+           
+       <h1 >Send Message</h1>
+       <form action="">
+        <div class="inputx" >
+            <input type="text" placeholder="name">
+        </div>
+        <div class="inputx">
+            <input type="text" placeholder="email">
+        </div>
+        <div class="inputx">
+         <textarea cols="" , rows="5" placeholder="message"></textarea>
+        </div> 
+   
+            <input id="btnn" type="submit" value="send">
+       
+
+       </form>
+       
+
+    </div>
+       
+     
+</div>
+</div>
+
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Lungs-Life. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:support@lungslife.com">support@lungslife.com</a></p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'fillform/js/logic.js' %}"></script>
+</body>
+
+</html>
